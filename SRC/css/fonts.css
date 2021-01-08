@@ -1,0 +1,28 @@
+@font-face{
+	font-family: 'Proxima Nova Extra Condensed';
+	src: url('../fonts/ProximaNovaExCn-Black.eot');
+	src: url('../fonts/ProximaNovaExCn-Black.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ProximaNovaExCn-Black.woff') format('woff'),
+	url('../fonts/ProximaNovaExCn-Black.ttf') format('truetype');
+	font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Extra Condensed';
+	src: url('../fonts/ProximaNovaExCn-Regular.eot');
+	src: url('../fonts/ProximaNovaExCn-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ProximaNovaExCn-Regular.woff') format('woff'),
+	url('../fonts/ProximaNovaExCn-Regular.ttf') format('truetype');
+	font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Proxima Nova Extra Condensed';
+	src: url('../fonts/ProximaNovaExCn-Bold.eot');
+	src: url('../fonts/ProximaNovaExCn-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ProximaNovaExCn-Bold.woff') format('woff'),
+	url('../fonts/ProximaNovaExCn-Bold.ttf') format('truetype');
+	font-weight: 700;
+    font-style: normal;
+}

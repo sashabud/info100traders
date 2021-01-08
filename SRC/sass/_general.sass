@@ -1,0 +1,548 @@
+header
+
+	position: fixed
+	width: 100%
+	height: 100px
+	background-color: #000000
+	z-index: 40
+	
+	.selected
+		position: relative
+		text-decoration: none
+	h1 
+		position: relative
+		padding-top: 20px
+		left: 160px
+		color: rgb(87, 166, 218)
+		font-size: 290%
+		font-weight: 900
+		transition: 0.5s
+
+		span 
+			color: white 
+	
+
+nav
+
+	
+	top: 5px
+	left: 650px
+	position: fixed
+	z-index: 40
+	.mob 
+		display: none
+	.hamburger
+		
+		
+	.menu
+		width: 600px
+		display: flex
+		justify-content: center
+		.menu_item
+			color: #ac979700
+		
+		
+		.no 
+			position: relative
+			color: rgb(87, 166, 218)
+			text-align: center
+			text-decoration: none
+			margin-left: 50px
+			font-size: 170%
+			font-weight: 400
+			&::before
+					
+				transition: 0.8s
+				position: absolute
+				margin: 40px 0 0 0
+				left: 50%
+				content: ""
+				display: block
+				width: 0
+				height: 3px
+				background-color:  rgb(0, 204, 255)
+				border: solid 0px rgb(0, 204, 255)	
+			&:hover
+				transition: 1.3s
+				color: rgb(247, 251, 253)
+				&::before
+					transition: 0.4s
+					position: absolute
+					margin: 40px 0 0 -60%
+					left: 50%
+					content: ""
+					display: block
+					width: 120%
+					height: 3px
+					background-color:  rgb(255, 255, 255)
+					border-radius: 100px
+					border: solid 1px rgb(0, 204, 255)
+				
+			
+	
+		
+.promo 
+	width: 100%
+	
+	
+	padding: 100px 0 100px 0
+	background: url(../img/promo2.jpg) center center/cover no-repeat
+	.container
+		
+		width: 1300px
+		height: 550px
+		background-color: rgba(2, 36, 68, 0.705)
+		margin: 0 auto
+		border-left: solid 20px rgb(87, 166, 218)
+		
+		border-right: solid 20px  rgb(87, 166, 218)
+		border-radius: 1200px 
+		
+		.title 
+			color: rgb(18, 216, 0)
+			font-size: 50px
+			font-weight: 900
+			line-height: 90px
+			text-align: center
+			margin-top: 20px
+			
+		.simple 
+			.title_big
+				color: white
+				font-size: 70px
+				font-weight: 900
+				line-height: 80px
+				text-align: center
+				margin-top: 20px
+			.line
+				
+				display: block
+				content: " "
+				height: 7px
+				width: 800px
+				margin: 0 auto
+				border-radius: 100%
+				background-color: #ffffff
+		
+		.promo_text
+			color:#dddddd
+			font-size: 23px
+			font-weight: 500
+			line-height: 30px
+			text-align: center
+			padding: 0 70px
+			span
+				color: #ffa600
+				text-transform: uppercase
+				font-weight: 700
+		.promo_btn
+			position: relative
+			display: block
+			margin: 0 auto
+			margin-top: 25px
+			width: 313px
+			height: 77px
+			box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.411)
+			border: 4px solid rgba(0, 0, 0, 0.377)
+			background-image: linear-gradient(to top, #00ff15 0%, #051a00 100%)
+			border-radius: 15px
+			cursor: pointer
+			outline: none
+			color: #ffffff
+			font-size: 24px
+			font-weight: 700
+			line-height: 5px
+			text-transform: uppercase
+
+			span
+				position: absolute
+				margin: -19px 0 0 -70px 
+				font-weight: 500
+				color:  #f35d2293
+				font-size: 18px
+				text-transform: none
+
+		a
+			
+			text-decoration: none
+			
+				
+			
+.rating
+	padding: 10px 0 10px 0 
+	background-color: #000000
+	.container
+	
+		width: 1400px
+		min-height: 100px
+		background-color: rgba(5, 143, 143, 0)
+		margin: 0 auto
+
+		.finish_wrapper
+			
+			display: flex
+			justify-content: center
+			.finish_item
+				width: 110px
+
+				.finish_round
+					display: flex
+					justify-content: center
+					align-items: center
+					margin: 0 auto
+					width: 100px
+					height: 100px
+					background-color: rgba(21, 204, 250, 0.76)
+					border-radius: 100px
+					border: solid 2px #f3f5f3
+					
+
+					.finish_icon
+						width: 70%
+
+		.finish_descr
+			margin: 10px 0 0 0px
+			width: 200px
+			text-align: center
+			font-size: 24px
+			line-height: 25px
+			color: #0bd0f3
+			font-weight: 400
+	
+.waiting
+	background-color: rgb(255, 255, 255)
+	border-top: 3px solid #fafafa
+	.container
+		padding-top: 80px
+		width: 1400px
+		background-color: rgba(162, 163, 163, 0)
+		margin: 0 auto
+		.waiting_header
+			color: rgb(31, 153, 235)
+			font-size: 40px
+			font-weight: 400
+			line-height: 12px
+			text-transform: uppercase
+			text-align: center
+		
+		.waiting_divider
+			width: 480px
+			height: 5px
+			background-color: #7c7c79
+			margin: 0 auto
+			margin-top: 20px
+			border-radius: 100%
+			
+		.waiting_subheader
+			margin-top: 18px
+			color: rgb(50, 160, 233)
+			text-align: center
+			font-size: 20px
+			font-weight: 400
+
+
+		.waiting_wraper
+			min-height: 500px
+			display: flex
+			justify-content: space-between
+			margin-top: 45px
+
+
+			.waiting_item
+				width: 420px
+				text-align: center
+				
+
+				.waiting_img
+					width: 100%
+					height: 300px
+					border-radius: 30px
+				
+				.waiting_descr
+					margin-top: 33px
+					color: #0a0a0a
+					font-size: 30px
+					font-weight: 300
+					line-height: 31px
+
+.winner
+	position: relative
+	background-color: #007cb6
+	min-height: 750px
+	.container
+		position: absolute
+		min-height: 400px
+		width: 700px
+		right: 50px
+		padding: 60px 0 107px 0
+		
+		.winner_header
+			position: relative
+			text-align: center
+			color: #15faee
+			font-size: 37px
+			font-weight: 700
+			line-height: 45px
+			text-transform: uppercase
+			z-index: 20
+		.winner_text
+			position: absolute
+			margin-top: 30px
+			font-size: 24px
+			color: #d8d8d8
+			font-weight: 400
+			z-index: 20
+			span
+				font-weight: 700
+				color: #15faee
+			.we
+				position: absolute
+				margin-left: -700px
+				text-align: center
+				font-weight: 400
+				font-size: 40px	
+				color: #15faee
+
+		.winner_img
+			position: absolute
+			top: -90px
+			left: -1100px
+			z-index: 0
+	
+.finish
+	
+	min-height: 480px
+	padding: 0 0 70px 0
+	background-color: #fcfcfc
+	.container
+		padding-top: 80px
+		width: 1400px
+		min-height: 500px
+		background-color: rgba(0, 134, 134, 0)
+		margin: 0 auto
+		.finish_header
+			color:#1eb600
+			font-size: 70px
+			font-weight: 700
+			line-height: 50px
+			text-transform: uppercase
+			text-align: center
+		
+		.finish_divider
+			width: 580px
+			height: 7px
+			background-color: #7c7c79
+			margin: 0 auto
+			margin-top: 20px
+			border-radius: 100%
+
+		.finish_wrapper
+			margin-top: 50px
+			display: flex
+			justify-content: center
+			.finish_item
+				width: 260px
+				
+				.finish_round
+					display: flex
+					justify-content: center
+					align-items: center
+					margin: 0 auto
+					width: 170px
+					height: 170px
+					background-color: #04c7f8fb
+					border-radius: 100%
+					border: solid 3px #000000
+					
+
+					.finish_icon
+						width: 80%
+
+				.finish_descr
+					padding: 0 10px
+					margin-top: 26px
+					text-align: center
+					font-size: 24px
+					color: #050505
+					span
+						color: #2bb319
+						font-weight: 700
+.prize
+	min-height: 1100px
+
+	.container
+		
+		
+		width: 1400px
+		margin: 0 auto
+		.prize_block
+			display: flex
+			justify-content: center
+			
+			.prize_img
+				width: 1100px
+				height: 700px
+		.prize_text
+			
+			text-align: center
+			color: #3f3c3c
+			font-size: 45px
+			font-weight: 700
+			
+
+		
+	.promo_btn
+		
+		position: relative
+		display: block
+		margin: 0 auto
+		margin-top: 25px
+		width: 313px
+		height: 77px
+		box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.411)
+		border: 5px solid rgba(0, 0, 0, 0.377)
+		background-image: linear-gradient(to top, #fa0202 0%, #471010 100%)
+		border-radius: 15px
+		cursor: pointer
+		outline: none
+		color: #ffffff
+		font-size: 24px
+		font-weight: 700
+		line-height: 5px
+		text-transform: uppercase
+		
+
+		span
+			position: absolute
+			margin: -20px 0 0 -50px 
+			font-weight: 500
+			color:  #e49a87ce
+			font-size: 18px
+			text-transform: none
+	a
+		
+		text-decoration: none
+
+.chat
+	
+	.container
+		width: 1400px
+		height: 600px
+		display: flex
+		justify-content: space-between
+		margin: 0 auto
+		.wraper
+			width: 350px
+			height: 450px
+			margin: 0 50px
+			
+			h2
+				width: 350px
+				height: 130px
+				padding-top: 40px
+				text-align: center
+				font-size: 25px
+				font-weight: 700
+
+			.chat_img
+				margin-top: 20px
+				width: 350px
+				height: 200px
+			.chat_btn
+				margin-top: 20px
+				width: 350px
+				height: 70px
+				box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.411)
+				border: 5px solid rgba(22, 148, 165, 0.377)
+				background-image: linear-gradient(to top, #a3919138 0%, #103747 100%)
+				cursor: pointer
+				outline: none
+				color: #ffffff
+				font-size: 24px
+				font-weight: 700
+				line-height: 5px
+				text-transform: uppercase
+				
+.world
+	background: url(https://img1.akspic.ru/image/80792-nebo-liniya-tehnologia-tehnologii-elektrik-2048x1152.jpg) center center/cover no-repeat
+	.container
+		width: 1400px
+		height: 700px
+		margin: 0 auto
+		h2
+			padding-top: 250px
+			text-align: center
+			font-size: 90px
+			color: #fcfcfc
+
+footer
+	
+	height: 150px
+	background-color: #000000
+	.container
+		width: 1400px
+		margin: 0 auto
+		.contacts
+			padding-top: 60px
+			display: flex
+			justify-content: center
+			text-decoration: none
+			color: #ffffff
+
+			a
+				
+				margin-left: 10px
+				
+				color: #ffffff
+				font-size: 15px
+			p
+				
+				margin-left: 10px
+				text-decoration: none
+				color: #ffffff
+				font-size: 15px
+
+		.footer_text
+			
+			margin-top: 30px
+			color: #ffffffdc
+			text-align: center	
+
+
+/** ПРАВИЛА **/
+
+.rules
+	
+	
+	background-color: #ffffff
+	.container
+		
+		width: 1400px
+		margin: 0 auto
+		padding-top: 60px
+		padding-bottom: 60px
+		background: #e4e1e100
+
+		.rules_text
+			
+			color: #000000
+			line-height: 26px
+			font-size: 21px
+			span
+			
+				color: #080808
+				font-size: 35px
+				font-weight: 900
+
+
+			hr
+
+				margin: 20px 0
+				width: 1400px
+				border: 3px solid #8b8b8b
+
+/** ОТЗЫВЫ **/
+
+.reviews
+	height: 800px
+	background-color: #4d4646
